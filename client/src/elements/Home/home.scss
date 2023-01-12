@@ -1,4 +1,8 @@
 .home{
-    height: 80vh;
-    background-color:#FFC93C ;
+    height: 100vh;
+    background-color:hsl(43, 100%, 62%) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
