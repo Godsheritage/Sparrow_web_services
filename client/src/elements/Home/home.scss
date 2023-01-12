@@ -2,9 +2,13 @@
     height: 85vh;
     background-color:hsl(43, 100%, 62%) ;
     position: relative;
-    // margin: auto;
-    // display: flex;
-    // flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
+    .sub-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+    }
+ 
 }
