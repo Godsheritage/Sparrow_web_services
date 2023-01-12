@@ -1,4 +1,7 @@
 .sign-in-box{
+//     display:bock;
+//   width:fit-content;
+    margin:auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -7,6 +10,9 @@
     height: 30rem;
     background-color: white;
     border-radius: 2rem;
+    position: absolute;
+    top: 10rem;
+    left:40rem;
     .input-fields{
         display: flex;
         flex-direction: column;

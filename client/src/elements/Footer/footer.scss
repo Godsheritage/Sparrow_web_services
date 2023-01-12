@@ -3,10 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    
+    // width: 100%;
     
     p{
-
+        margin: auto;
         text-align: center;
+        // align-self: center;
     }
 }
