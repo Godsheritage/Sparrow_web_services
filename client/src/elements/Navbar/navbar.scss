@@ -1,4 +1,22 @@
 .nav{
     background-color: white;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2rem;
+    height: 10vh;
+    h1{
+        
+    }
+    ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        color:#5BC0F8;
+        font-family: Roboto;
+        li{
+            margin-left: 2rem;
+        }
+    }
 }
