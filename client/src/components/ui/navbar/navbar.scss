@@ -8,12 +8,17 @@
     padding: 0 2rem;
     height: 10vh;
     // width: 100%;
+    Link{
+        text-decoration: none;
+    }
     
     h1{
         font-size: 3rem ;
         margin-left:1rem ;
         // font-family: 'Open Sans', sans-serif;
         font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        color: #000;
         
     }
     ul{
