@@ -1,8 +1,7 @@
-import Home from "./Home/Home";
+import Home from "./pages/Home/Home";
 import Navbar from "./components/ui/navbar/Navbar";
 import Footer from "./components/ui/footer/Footer";
-import Account from "./pages/account/Account";
-import { Route, Routes, Router } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import "./home.scss";
 import React from "react";
-import SignIn from "../pages/signIn/SignIn";
-import Account from "../pages/account/Account";
+import SignIn from "../signIn/SignIn"
+import Account from "../account/Account";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
