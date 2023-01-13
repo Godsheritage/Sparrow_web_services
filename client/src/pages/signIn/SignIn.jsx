@@ -1,4 +1,5 @@
 import "./signin.scss";
+import Input from "../../components/form elements/Input";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -9,15 +10,19 @@ const SignIn = () => {
     <div className="sign-in-box">
       <h1>Sign In</h1>
       <div className="input-fields ">
-        <input
+        <Input
+          element="input"
           type="text"
           placeholder="Username"
-          className="form-control mb-3"
+          id = "username"
+          className="form-control"
         />
-        <input
+        <Input
+          element="input"
           type="password"
           placeholder="Password"
           className="form-control"
+          id = "password"
         />
       </div>
       <Link to="/account" className="btn btn-lg btn-primary">
