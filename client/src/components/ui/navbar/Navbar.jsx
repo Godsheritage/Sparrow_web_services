@@ -10,15 +10,25 @@ const Navbar = () => {
       </Link>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
-          <li>Home</li>
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link to="/account">
+            <li>Account</li>
+          </Link>
+          <Link to="/profile">
+            <li>Profile</li>
+          </Link>
+          <Link to="/updateoffer">
+            <li>Update Offer</li>
+          </Link>
+          <Link to="/promote">
+            <li>Promote</li>
+          </Link>
         </ul>
       </nav>
     </div>
   );
-}; 
+};
 
 export default Navbar;

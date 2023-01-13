@@ -25,8 +25,11 @@
         list-style: none;
         color:#5BC0F8;
         font-family: Roboto;
-        li{
-            margin-left: 2rem;
+        a{
+            color:#5BC0F8;
+            li{
+                margin-left: 2rem;
+            }
         }
     }
 }

@@ -2,6 +2,8 @@ import "./signin.scss";
 import Input from "../../components/form elements/Input";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+// import { Button } from "bootstrap";
+import Button from "../../components/ui/button/Button";
 
 const SignIn = () => {
   const [signUp, isSignup] = useState(false);
@@ -25,9 +27,9 @@ const SignIn = () => {
           id = "password"
         />
       </div>
-      <Link to="/account" className="btn btn-lg btn-primary">
+      <Button to="/account" className="btn btn-lg btn-primary">
         Sign In
-      </Link>
+      </Button>
       <p>
         Don't have an account? <Link> Sign Up</Link>
       </p>

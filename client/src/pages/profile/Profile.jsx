@@ -10,7 +10,7 @@ const Profile = () => {
       <div className="form">
         <Input
           element="input"
-          type="text"
+          type="file"
           placeholder="Upload Image"
           id="username"
           className="form-control"
@@ -59,14 +59,14 @@ const Profile = () => {
         />
         <Input
           element="input"
-          type="text"
+          type="file"
           placeholder="Add Files / Images"
           id="username"
           className="form-control"
         />
         
       </div>
-      <Button>Save Changes </Button>
+      <Button>Save Changes</Button>
     </div>
   );
 };
