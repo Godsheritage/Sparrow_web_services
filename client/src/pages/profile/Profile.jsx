@@ -1,5 +1,6 @@
 import React from "react";
 import "./ profile.scss"
+import Button from "../../components/ui/button/Button";
 import Input from "../../components/form elements/Input";
 
 const Profile = () => {
@@ -65,6 +66,7 @@ const Profile = () => {
         />
         
       </div>
+      <Button>Save Changes </Button>
     </div>
   );
 };
