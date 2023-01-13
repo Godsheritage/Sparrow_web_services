@@ -1,9 +1,9 @@
 import React from "react";
 import "./account.scss";
 import { Link } from "react-router-dom";
-import bookImg from "../../assets/book.svg";
-import jetImg from "../../assets/jet.svg";
-import writeImg from "../../assets/write.svg";
+import bookImg from "../../assets/../assets/icons/book.svg";
+import jetImg from "../../assets/icons/jet.svg";
+import writeImg from "../../assets/icons/write.svg";
 
 const Account = () => {
   return (
