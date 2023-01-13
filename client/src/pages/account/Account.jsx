@@ -12,18 +12,23 @@ const Account = () => {
       <div className="option-boxes">
         <Link to="/profile" className="option-links">
           <div className="">
-            <img src={bookImg} alt="this is a book" size="1rem" />
+            <img src={bookImg} alt="this is a book"  />
             <p>Update Profile</p>
           </div>
         </Link>
+        <Link to="/updateoffer" className="option-links">
+          <div>
+            <img src={writeImg} alt="this is a book"  />
+            <p>Update Offers</p>
+          </div>
+        </Link>
+        <Link to="/promote" className="option-links">
+        
         <div>
-          <img src={writeImg} alt="this is a book" size="1rem" />
-          <p>Update Offers</p>
-        </div>
-        <div>
-          <img src={jetImg} alt="this is a book" size="1rem" />
+          <img src={jetImg} alt="this is a book" />
           <p>promote Event</p>
         </div>
+        </Link>
       </div>
     </div>
   );

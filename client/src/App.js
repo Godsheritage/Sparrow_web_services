@@ -38,6 +38,26 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/updateoffer"
+          element={
+            <>
+              <Navbar />
+              <Home/>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/promote"
+          element={
+            <>
+              <Navbar />
+              <Home/>
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </div>
   );

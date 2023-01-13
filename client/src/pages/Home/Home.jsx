@@ -4,6 +4,8 @@ import SignIn from "../signIn/SignIn"
 import Account from "../account/Account";
 import { useLocation } from "react-router-dom";
 import Profile from "../profile/Profile";
+import UpdateOffer from "../update offer/UpdateOffer";
+import Promotion from "../promote/Promote";
 
 const Home = () => {
   const location = useLocation();
@@ -13,11 +15,17 @@ const Home = () => {
   if (currentLocation === "/") {
     currentComponent = <SignIn />;
   }
-  if (currentLocation === "/account") {
+  else if (currentLocation === "/account") {
     currentComponent = < Account/>;
   }
-  if (currentLocation === "/profile") {
+  else if (currentLocation === "/profile") {
     currentComponent = < Profile/>;
+  }
+  else if (currentLocation === "/updateoffer") {
+    currentComponent = < UpdateOffer/>;
+  }
+  else if (currentLocation === "/promote") {
+    currentComponent = < Promotion/>;
   }
 
   return (
