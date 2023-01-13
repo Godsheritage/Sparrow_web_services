@@ -6,7 +6,7 @@ import Input from "../../components/form elements/Input";
 const Profile = () => {
   return (
     <div className="profile">
-      <h1>profile</h1>
+      <h1>Profile</h1>
       <div className="form">
         <Input
           element="input"
@@ -51,7 +51,7 @@ const Profile = () => {
           className="form-control"
         />
         <Input
-          element="input"
+          element="textarea"
           type="text"
           placeholder="Business Description"
           id="description"

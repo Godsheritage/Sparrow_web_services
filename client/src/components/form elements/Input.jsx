@@ -35,6 +35,7 @@ const Input = ({
         id={id}
         rows={3}
         placeholder={placeholder}
+        className = {className}
         // value={inputState.value}
         onChange={changeHandler}
         // onBlur={touchHandlander}
