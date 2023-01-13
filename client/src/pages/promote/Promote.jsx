@@ -5,7 +5,7 @@ import Input from "../../components/form elements/Input";
 
 const Promote = () => {
   return (
-    <div className="profile">
+    <div className="promote">
       <h1>Our Services / Offers</h1>
       <div className="form">
         <Input
@@ -26,6 +26,7 @@ const Promote = () => {
         <Input
           element="input"
           type="number"
+          onFocus={ (e) =>  e.target.type='date'}
           placeholder="Promotion Period Date"
           id="promotionperioddate"
           className="form-control"
@@ -33,6 +34,7 @@ const Promote = () => {
         <Input
           element="input"
           type="text"
+          onFocus={ (e) =>  e.target.type='date'}
           placeholder="Promotion Period Time"
           id="promotionperiodtime"
           className="form-control"

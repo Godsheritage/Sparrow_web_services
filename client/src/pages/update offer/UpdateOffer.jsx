@@ -13,6 +13,7 @@ const UpdateOffer = () => {
           placeholder="Upload Image"
           id="username"
           className="form-control"
+          label
         />
         <Input
           element="input"
@@ -41,6 +42,7 @@ const UpdateOffer = () => {
           placeholder="Valid Until"
           id="validuntil"
           className="form-control"
+          onFocus={ (e) =>  e.target.type='date'}
         />
         <Input
           element="textarea"

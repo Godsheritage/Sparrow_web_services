@@ -11,9 +11,10 @@ const Profile = () => {
         <Input
           element="input"
           type="file"
-          placeholder="Upload Image"
+          placeholder="Upload Logo"
           id="username"
           className="form-control"
+          label
         />
         <Input
           element="input"
@@ -38,7 +39,7 @@ const Profile = () => {
         />
         <Input
           element="input"
-          type="text"
+          type="number"
           placeholder="Phone Number"
           id="phonenumber"
           className="form-control"
@@ -63,6 +64,8 @@ const Profile = () => {
           placeholder="Add Files / Images"
           id="username"
           className="form-control"
+          label
+          multiple
         />
         
       </div>

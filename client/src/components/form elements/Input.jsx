@@ -7,17 +7,17 @@ import "./input.scss";
 // import { validate } from "../util/validators";
 // import { useReducer, useEffect } from "react";
 
-
-
 const Input = ({
   element,
   type,
   id,
-//   value,
+  multiple,
+  label,
+  onFocus,
   changeHandler,
-//   errorText,
+  //   errorText,
   placeholder,
-  className
+  className,
 }) => {
   const elements =
     element === "input" ? (
@@ -26,6 +26,8 @@ const Input = ({
         id={id}
         placeholder={placeholder}
         className={className}
+        multiple={multiple}
+        onFocus = {onFocus}
         // value={inputState.value}
         onChange={changeHandler}
         // onBlur={touchHandlander}
@@ -35,7 +37,7 @@ const Input = ({
         id={id}
         rows={3}
         placeholder={placeholder}
-        className = {className}
+        className={className}
         // value={inputState.value}
         onChange={changeHandler}
         // onBlur={touchHandlander}
@@ -43,6 +45,7 @@ const Input = ({
     );
   return (
     <div>
+      {label && <label htmlFor={id}>{placeholder}</label>}
       {elements}
       {/* {isValid && inputState.isTouched && <p>{errorText}</p>} */}
     </div>

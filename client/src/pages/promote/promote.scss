@@ -1,0 +1,18 @@
+.promote{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35rem;
+    height: 40rem;
+    background-color: white;
+    border-radius: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    input{
+        width: 22rem;
+        height: 3rem;
+    }
+}
