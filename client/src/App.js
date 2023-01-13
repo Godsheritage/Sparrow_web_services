@@ -23,7 +23,7 @@ function App() {
           element={
             <>
               <Navbar />
-              <Account/>
+              <Home/>
               <Footer />
             </>
           }

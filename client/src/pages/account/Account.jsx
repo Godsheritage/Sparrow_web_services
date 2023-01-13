@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./account.scss"
 const Account = () => {
   return (
-    <div>
+    <div className='account'>
         <h1>What would you like to do?</h1>
         <div className='option-boxes'>
             <div>

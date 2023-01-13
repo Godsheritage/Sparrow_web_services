@@ -1,6 +1,7 @@
 import "./home.scss";
 import React from "react";
 import SignIn from "../signIn/SignIn";
+import Account from "../account/Account";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
     currentComponent = <SignIn />;
   }
   if (currentLocation === "/account") {
-    currentComponent = <SignIn />;
+    currentComponent = < Account/>;
   }
 
   return (
