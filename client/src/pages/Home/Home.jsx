@@ -3,6 +3,7 @@ import React from "react";
 import SignIn from "../signIn/SignIn"
 import Account from "../account/Account";
 import { useLocation } from "react-router-dom";
+import Profile from "../profile/Profile";
 
 const Home = () => {
   const location = useLocation();
@@ -14,6 +15,9 @@ const Home = () => {
   }
   if (currentLocation === "/account") {
     currentComponent = < Account/>;
+  }
+  if (currentLocation === "/profile") {
+    currentComponent = < Profile/>;
   }
 
   return (

@@ -2,6 +2,7 @@ import Home from "./pages/Home/Home";
 import Navbar from "./components/ui/navbar/Navbar";
 import Footer from "./components/ui/footer/Footer";
 import { Route, Routes} from "react-router-dom";
+import Profile from "./pages/profile/Profile";
 
 function App() {
   return (
@@ -19,6 +20,16 @@ function App() {
         />
         <Route
           path="/account"
+          element={
+            <>
+              <Navbar />
+              <Home/>
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/profile"
           element={
             <>
               <Navbar />

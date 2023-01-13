@@ -1,4 +1,5 @@
 import React from "react";
+import "./ profile.scss"
 import Input from "../../components/form elements/Input";
 
 const Profile = () => {
