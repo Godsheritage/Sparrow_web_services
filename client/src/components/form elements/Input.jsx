@@ -13,9 +13,9 @@ const Input = ({
   element,
   type,
   id,
-  value,
+//   value,
   changeHandler,
-  errorText,
+//   errorText,
   placeholder,
   className
 }) => {

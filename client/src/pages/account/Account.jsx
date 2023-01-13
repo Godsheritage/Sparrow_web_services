@@ -10,7 +10,7 @@ const Account = () => {
     <div className='account'>
         <h1>What would you like to do?</h1>
         <div className='option-boxes'>
-            <div>
+            <div className=''>
                 <img src={bookImg} alt="this is a book" size='1rem' />
                 <p>Update Profile</p>
             </div>
