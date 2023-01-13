@@ -1,5 +1,5 @@
 import React from 'react'
-import SignIn from '../sign-in/SignIn'
+import SignIn from '../signIn/SignIn'
 import './home.scss'
 
 const Home = () => {
