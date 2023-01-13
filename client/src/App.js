@@ -1,4 +1,4 @@
-import Home from "./pages/Home/Home";
+import Home from "./Home/Home";
 import Navbar from "./components/ui/navbar/Navbar";
 import Footer from "./components/ui/footer/Footer";
 import Account from "./pages/account/Account";
