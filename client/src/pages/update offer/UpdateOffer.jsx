@@ -18,7 +18,7 @@ const UpdateOffer = () => {
         <Input
           element="input"
           type="text"
-          placeholder="Name"
+          placeholder="Product Name"
           id="name"
           className="form-control"
         />
