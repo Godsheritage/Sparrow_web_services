@@ -1,15 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./ profile.scss"
+import "./ profile.scss";
 import Button from "../../components/ui/button/Button";
 import Input from "../../components/form elements/Input";
 
 const Profile = () => {
+  const handleChange = (e, name) => {
+    let value = new Map()
+    value.set(name , e.target.value)
+    console.log(value);
+  };
   return (
-    <motion.div className="profile"
-    initial={{x:"100%"}}
-    animate={{x:0}}
-    exit={{x:"2000%" }}
+    <motion.div
+      className="profile"
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "2000%" }}
     >
       <h1>Profile</h1>
       <div className="form">
@@ -27,6 +33,7 @@ const Profile = () => {
           placeholder="Business Name"
           id="businessname"
           className="form-control"
+          changeHandler = {(e) => handleChange(e, e.target.id)}
         />
         <Input
           element="input"
@@ -72,7 +79,6 @@ const Profile = () => {
           label
           multiple
         />
-        
       </div>
       <Button>Save Changes</Button>
     </motion.div>

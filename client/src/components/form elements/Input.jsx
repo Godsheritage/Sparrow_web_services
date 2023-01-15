@@ -19,6 +19,14 @@ const Input = ({
   placeholder,
   className,
 }) => {
+    // const handleChange = (e, name) => {
+    //     let value = { name: e.target.value };
+    //     console.log(value);
+    //   };
+
+
+
+    
   const elements =
     element === "input" ? (
       <input
