@@ -3,11 +3,18 @@ import "./account.scss";
 import { Link } from "react-router-dom";
 import bookImg from "../../assets/../assets/icons/book.svg";
 import jetImg from "../../assets/icons/jet.svg";
+import { motion } from "framer-motion";
 import writeImg from "../../assets/icons/write.svg";
 
 const Account = () => {
   return (
-    <div className="account">
+    <motion.div className="account"
+    initial={{x:"100%"}}
+    animate={{x:0}}
+    exit={{x:"2000%" }}
+    
+    
+    >
       <h1>What would you like to do?</h1>
       <div className="option-boxes">
         <Link to="/profile" className="option-links">
@@ -30,7 +37,7 @@ const Account = () => {
         </div>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

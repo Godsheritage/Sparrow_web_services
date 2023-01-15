@@ -1,11 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./ profile.scss"
 import Button from "../../components/ui/button/Button";
 import Input from "../../components/form elements/Input";
 
 const Profile = () => {
   return (
-    <div className="profile">
+    <motion.div className="profile"
+    initial={{x:"100%"}}
+    animate={{x:0}}
+    exit={{x:"2000%" }}
+    >
       <h1>Profile</h1>
       <div className="form">
         <Input
@@ -70,7 +75,7 @@ const Profile = () => {
         
       </div>
       <Button>Save Changes</Button>
-    </div>
+    </motion.div>
   );
 };
 

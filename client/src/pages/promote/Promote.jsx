@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 import "./promote.scss";
 import Button from "../../components/ui/button/Button";
 import Input from "../../components/form elements/Input";
@@ -12,7 +13,12 @@ const Promote = () => {
   });
 
   return (
-    <div className="promote">
+    <motion.div
+      className="promote"
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "2000%" }}
+    >
       <h1>Our Services / Offers</h1>
       <div className="form">
         <Input
@@ -23,13 +29,15 @@ const Promote = () => {
           className="form-control"
         />
 
-        <div className="map-box">{!isLoaded ? <div>Loading...</div> : <Map />}</div>
+        <div className="map-box">
+          {!isLoaded ? <div>Loading...</div> : <Map />}
+        </div>
 
-        <Input 
+        <Input
           element="input"
           type="number"
           placeholder="Radius from Location"
-          id="radiusfromlocation" 
+          id="radiusfromlocation"
           className="form-control"
         />
         <Input
@@ -51,7 +59,7 @@ const Promote = () => {
       </div>
 
       <Button>Add Another</Button>
-    </div>
+    </motion.div>
   );
 };
 

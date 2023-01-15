@@ -1,4 +1,5 @@
 import "./signin.scss";
+import { motion } from "framer-motion";
 import Input from "../../components/form elements/Input";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -9,7 +10,11 @@ const SignIn = () => {
   const [signUp, isSignup] = useState(false);
 
   return (
-    <div className="sign-in-box">
+    <motion.div className="sign-in-box"
+    initial={{x:"100%"}}
+    animate={{x:0}}
+    exit={{x:"2000%" }}
+    >
       <h1>Sign In</h1>
       <div className="input-fields ">
         <Input
@@ -33,7 +38,7 @@ const SignIn = () => {
       <p>
         Don't have an account? <Link> Sign Up</Link>
       </p>
-    </div>
+    </motion.div>
   );
 };
 

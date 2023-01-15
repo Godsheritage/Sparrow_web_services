@@ -1,10 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Input from "../../components/form elements/Input";
 import Button from "../../components/ui/button/Button";
 
 const UpdateOffer = () => {
   return (
-    <div className="profile">
+    <motion.div className="profile"
+    initial={{x:"100%"}}
+    animate={{x:0}}
+    exit={{x:"2000%" }}
+    >
       <h1>Our Services / Offers</h1>
       <div className="form">
         <Input
@@ -56,7 +61,7 @@ const UpdateOffer = () => {
         <Button>Add Another</Button>
         <Button>Promote This</Button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
