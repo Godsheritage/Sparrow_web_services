@@ -1,10 +1,10 @@
 import "./signin.scss";
 import { motion } from "framer-motion";
-import Input from "../../components/form elements/Input";
+import Input from "../../components/form elements/input/Input";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import { Button } from "bootstrap";
-import Button from "../../components/ui/button/Button";
+import Button from "../../components/form elements/button/Button";
 
 const SignIn = () => {
   const [signUp, isSignup] = useState(false);

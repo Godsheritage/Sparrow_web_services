@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./ profile.scss";
-import Button from "../../components/ui/button/Button";
-import Input from "../../components/form elements/Input";
+import Button from "../../components/form elements/button/Button";
+import Input from "../../components/form elements/input/Input";
 
 const Profile = () => {
   const handleChange = (e, name) => {
@@ -85,6 +85,5 @@ const Profile = () => {
   );
 };
 
-//Todo Create button components
 
 export default Profile;

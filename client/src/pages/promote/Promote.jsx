@@ -1,8 +1,8 @@
 import React from "react";
 import {motion} from "framer-motion";
 import "./promote.scss";
-import Button from "../../components/ui/button/Button";
-import Input from "../../components/form elements/Input";
+import Button from "../../components/form elements/button/Button";
+import Input from "../../components/form elements/input/Input";
 
 import Map from "../../components/ui/map/Map";
 import { useLoadScript } from "@react-google-maps/api";
