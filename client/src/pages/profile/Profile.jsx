@@ -1,8 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "./ profile.scss";
-import Button from "../../components/form elements/button/Button";
+import { motion } from "framer-motion";
 import Input from "../../components/form elements/input/Input";
+import Button from "../../components/form elements/button/Button";
 
 const Profile = () => {
   const handleChange = (e, name) => {
@@ -13,9 +13,9 @@ const Profile = () => {
   return (
     <motion.div
       className="profile"
-      initial={{ x: "100%" }}
-      animate={{ x: 0 }}
-      exit={{ x: "2000%" }}
+    //   initial={{ x: "100%" }}
+    //   animate={{ x: 0 }}
+    //   exit={{ x: "2000%" }}
     >
       <h1>Profile</h1>
       <div className="form">

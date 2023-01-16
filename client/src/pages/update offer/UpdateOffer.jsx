@@ -6,9 +6,9 @@ import Button from "../../components/form elements/button/Button";
 const UpdateOffer = () => {
   return (
     <motion.div className="profile"
-    initial={{x:"100%"}}
-    animate={{x:0}}
-    exit={{x:"2000%" }}
+    // initial={{x:"100%"}}
+    // animate={{x:0}}
+    // exit={{x:"2000%" }}
     >
       <h1>Our Services / Offers</h1>
       <div className="form">

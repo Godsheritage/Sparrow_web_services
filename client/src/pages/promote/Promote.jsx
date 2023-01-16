@@ -15,9 +15,9 @@ const Promote = () => {
   return (
     <motion.div
       className="promote"
-      initial={{ x: "100%" }}
-      animate={{ x: 0 }}
-      exit={{ x: "2000%" }}
+      // initial={{ x: "100%" }}
+      // animate={{ x: 0 }}
+      // exit={{ x: "2000%" }}
     >
       <h1>Our Services / Offers</h1>
       <div className="form">

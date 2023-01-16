@@ -1,11 +1,12 @@
 import "./home.scss";
 import React from "react";
 import SignIn from "../signIn/SignIn"
+import { motion } from "framer-motion";
 import Account from "../account/Account";
-import { useLocation } from "react-router-dom";
 import Profile from "../profile/Profile";
-import UpdateOffer from "../update offer/UpdateOffer";
 import Promotion from "../promote/Promote";
+import { useLocation } from "react-router-dom";
+import UpdateOffer from "../update offer/UpdateOffer";
 
 const Home = () => {
   const location = useLocation();
@@ -29,8 +30,14 @@ const Home = () => {
   }
 
   return (
-    <div className="home">
-      <div className="sub-home">{currentComponent}</div>
+    <div className="home"
+   
+    >
+      <motion.div className="sub-home"
+      //  initial={{ translateX: "100%" }}
+      //  animate={{ translateX: 0 }}
+      //  exit={{ translateX: "2000%" }}
+      >{currentComponent}</motion.div>
     </div>
   );
 };

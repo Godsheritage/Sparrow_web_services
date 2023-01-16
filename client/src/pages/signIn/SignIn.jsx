@@ -11,9 +11,9 @@ const SignIn = () => {
 
   return (
     <motion.div className="sign-in-box"
-    initial={{x:"100%"}}
-    animate={{x:0}}
-    exit={{x:"2000%" }}
+    // initial={{x:"100%"}}
+    // animate={{x:0}}
+    // exit={{x:"2000%" }}
     >
       <h1>Sign In</h1>
       <div className="input-fields ">

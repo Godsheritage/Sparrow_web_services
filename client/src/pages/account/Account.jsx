@@ -9,9 +9,9 @@ import writeImg from "../../assets/icons/write.svg";
 const Account = () => {
   return (
     <motion.div className="account"
-    initial={{x:"100%"}}
-    animate={{x:0}}
-    exit={{x:"2000%" }}
+    // initial={{x:"100%"}}
+    // animate={{x:0}}
+    // exit={{x:"2000%" }}
     
     
     >
