@@ -1,11 +1,12 @@
+import "./promote.scss";
 import React from "react";
 import {motion} from "framer-motion";
-import "./promote.scss";
-import Button from "../../components/form elements/button/Button";
-import Input from "../../components/form elements/input/Input";
-
 import Map from "../../components/ui/map/Map";
 import { useLoadScript } from "@react-google-maps/api";
+import Input from "../../components/form elements/input/Input";
+import Button from "../../components/form elements/button/Button";
+
+
 
 const Promote = () => {
   const { isLoaded } = useLoadScript({
@@ -19,7 +20,7 @@ const Promote = () => {
       // animate={{ x: 0 }}
       // exit={{ x: "2000%" }}
     >
-      <h1>Our Services / Offers</h1>
+      <h1>Promote</h1>
       <div className="form">
         <Input
           element="input"
