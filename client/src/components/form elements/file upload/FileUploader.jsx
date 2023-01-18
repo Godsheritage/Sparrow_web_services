@@ -11,15 +11,13 @@ function FileUploader() {
   return (
     <div className="file-uploader">
       <input type="file" multiple onChange={handleChange} className = "form-control"/>
-      <div className="file-input-label">
-        {files.length > 0 ? (
+      <div className={files.length > 0 && "file-input-label" }>
+        {files.length > 0 && (
           <ul>
             {Array.from(files).map((file) => (
               <li key={file.name}>{file.name}</li>
             ))}
           </ul>
-        ) : (
-          <p>No files selected</p>
         )}
       </div>
     </div>
