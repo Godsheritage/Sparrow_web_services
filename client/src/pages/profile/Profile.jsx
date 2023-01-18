@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ profile.scss";
 import { motion } from "framer-motion";
 import Input from "../../components/form elements/input/Input";
 import Button from "../../components/form elements/button/Button";
 import DropDown from "../../components/ui/dropdown/DropDown";
+import FileUploader from "../../components/form elements/file upload/FileUploader";
 
 const Profile = () => {
   const handleChange = (e, name) => {
@@ -23,14 +24,7 @@ const Profile = () => {
     >
       <h1>Profile</h1>
       <div className="form">
-        <Input
-          element="input"
-          type="file"
-          placeholder="Upload Logo"
-          id="username"
-          className="form-control"
-          label
-        />
+      <FileUploader/>
         <Input
           element="input"
           type="text"
