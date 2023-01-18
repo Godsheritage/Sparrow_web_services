@@ -30,15 +30,8 @@ const UpdateOffer = () => {
         <Input
           element="input"
           type="number"
-          placeholder="Old Price"
-          id="oldprice"
-          className="form-control"
-        />
-        <Input
-          element="input"
-          type="number"
-          placeholder="New Price"
-          id="newprice"
+          placeholder="Price"
+          id="price"
           className="form-control"
         />
         <Input

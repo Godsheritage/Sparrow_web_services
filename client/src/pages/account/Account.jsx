@@ -31,7 +31,7 @@ const Account = () => {
         </Link>
         <Link to="/promote" className="option-links">
         <div>
-          <img src= {speakerImg} alt="this is a book" height="110rem"/>
+          <img src= {speakerImg} alt="this is a book" height="100rem"/>
           <p>Promote My Business</p>
         </div>
         </Link>
