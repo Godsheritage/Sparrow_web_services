@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ profile.scss";
 import { motion } from "framer-motion";
 import Input from "../../components/form elements/input/Input";
 import Button from "../../components/form elements/button/Button";
+import DropDown from "../../components/ui/dropdown/DropDown";
 
 const Profile = () => {
   const handleChange = (e, name) => {
-    let value = new Map()
-    value.set(name , e.target.value)
+    let value = new Map();
+    value.set(name, e.target.value);
     console.log(value);
   };
+
+  
+
   return (
     <motion.div
       className="profile"
-    //   initial={{ x: "100%" }}
-    //   animate={{ x: 0 }}
-    //   exit={{ x: "2000%" }}
+      //   initial={{ x: "100%" }}
+      //   animate={{ x: 0 }}
+      //   exit={{ x: "2000%" }}
     >
       <h1>Profile</h1>
       <div className="form">
@@ -33,7 +37,7 @@ const Profile = () => {
           placeholder="Business Name"
           id="businessname"
           className="form-control"
-          changeHandler = {(e) => handleChange(e, e.target.id)}
+          changeHandler={(e) => handleChange(e, e.target.id)}
         />
         <Input
           element="input"
@@ -56,13 +60,7 @@ const Profile = () => {
           id="phonenumber"
           className="form-control"
         />
-        <Input
-          element="input"
-          type="text"
-          placeholder="Business Type"
-          id="businesstype"
-          className="form-control"
-        />
+      <DropDown />
         <Input
           element="textarea"
           type="text"
@@ -84,6 +82,5 @@ const Profile = () => {
     </motion.div>
   );
 };
-
 
 export default Profile;

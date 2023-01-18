@@ -14,10 +14,13 @@ const Input = ({
   multiple,
   label,
   onFocus,
-  changeHandler,
+  // changeHandler,
   //   errorText,
   placeholder,
   className,
+  value, 
+  onChange,
+  list
 }) => {
     // const handleChange = (e, name) => {
     //     let value = { name: e.target.value };
@@ -37,7 +40,9 @@ const Input = ({
         multiple={multiple}
         onFocus = {onFocus}
         // value={inputState.value}
-        onChange={changeHandler}
+        onChange={onChange}
+        list={list}
+        value={value}
         // onBlur={touchHandlander}
       />
     ) : (
@@ -47,7 +52,7 @@ const Input = ({
         placeholder={placeholder}
         className={className}
         // value={inputState.value}
-        onChange={changeHandler}
+        onChange={onChange}
         // onBlur={touchHandlander}
       />
     );
